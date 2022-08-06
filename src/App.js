@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import ShippingOptions from "./components/ShippingOptions";
+import PaymentOptions from "./components/PaymentOptions";
+import TaxesAndLocations from "./components/TaxesAndLocations";
+import CountriesTaxes from "./components/CountriesTaxes";
+import EmailConfig from "./components/EmailConfig";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   return (
+    <div>
+      <Header />
+      <Container fluid>
+        <Row>
+          <Col xs={2} id="sidebar-wrapper">
+            <Navbar />
+          </Col>
+          <Col>
+            <Container>
+             {/* <ShippingOptions/> */}
+             {/* <PaymentOptions/> */}
+             {/* <TaxesAndLocations/> */}
+             {/* <CountriesTaxes/> */}
+             <EmailConfig/>
+            </Container>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
