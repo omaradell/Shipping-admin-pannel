@@ -8,6 +8,10 @@ import PaymentOptions from "./components/PaymentOptions";
 import TaxesAndLocations from "./components/TaxesAndLocations";
 import CountriesTaxes from "./components/CountriesTaxes";
 import EmailConfig from "./components/EmailConfig";
+import Adminstration from "./components/Adminstration";
+import ManageRoles from "./components/ManageRoles";
+import Discount from "./components/Discount";
+import PromoCodes from "./components/PromoCodes";
 
 function App() {
    return (
@@ -24,7 +28,11 @@ function App() {
              {/* <PaymentOptions/> */}
              {/* <TaxesAndLocations/> */}
              {/* <CountriesTaxes/> */}
-             <EmailConfig/>
+             {/* <EmailConfig/> */}
+             {/* <Adminstration/> */}
+             {/* <ManageRoles/> */}
+             {/* <Discount/> */}
+             {/* <PromoCodes/> */}
             </Container>
           </Col>
         </Row>

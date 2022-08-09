@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 
 export default class TaxesAndLocations extends Component {
   render() {
@@ -36,7 +38,6 @@ export default class TaxesAndLocations extends Component {
                   type="checkbox"
                   role="switch"
                   id="flexSwitchCheckChecked"
-                  
                 />
               </td>
               <td>
